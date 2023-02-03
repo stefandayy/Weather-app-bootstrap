@@ -19,14 +19,14 @@ export default function WeatherAppComponent(props) {
               alt="icon"
               style={{ width: "100px" }}
             />
-            <Card.Title>{props.temperature}° C</Card.Title>
+            <Card.Title>{props.temperature.toFixed()}° C</Card.Title>
 
             <Card.Text>
               <p>
-                Feels Like: <span>{props.feels_like}° C</span>{" "}
+                Feels Like: <span>{props.feels_like.toFixed()}° C</span>{" "}
               </p>
               <p>
-                Wind speed: <span>{props.windSpeed} Km/h</span>{" "}
+                Wind speed: <span>{props.windSpeed.toFixed()} Km/h</span>{" "}
               </p>
               <p>
                 Humidity: <span>{props.humidity} %</span>{" "}
